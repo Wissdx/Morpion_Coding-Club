@@ -6,6 +6,7 @@ from pygame.locals import *
 icone = pygame.image.load("siphano.ico")
 rond = pygame.image.load("rond.png")
 croix = pygame.image.load("croix.png")
+background = pygame.image.load("Background.png")
 
 # Initialisation de la fenetre
 pygame.init()
