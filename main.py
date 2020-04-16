@@ -1,37 +1,37 @@
+# coding: utf-8
 import os
 
-array1 = ["","",""]
-array2 = ["","",""]
-array3 = ["","",""]
+array = ["","","","","","","","",""]
 
-print(array1)
-print(array2)
-print(array3)
+print(array)
 
 
-print(tableau)
-
-symboleJoueur1 = "x"
-symboleJoueur2 = "o"
-
-def saisieCoords():
+def saisieCoords(joueur):
     CoordsX = input("Choisissez la case en x : ")
     CoordsY = input("Choisissez la case en y : ")
     
-    array[CoordsX] = 
-    
-    
-    
+    if joueur == 1:
+        print("Joueur 1 à toi de jouer !")
+        array[CoordsX] = "x"
+        array[CoordsY] = "x"
+    elif joueur == 2:
+        print("Joueur 2 à toi de jouer !")
+        array[CoordsX] = "o"
+        array[CoordsY] = "o"
     
 
 continuer = 1
+joueur = 1
 
 while continuer == 1:
-    if joueur1:
+    if joueur == 1:
         print("C'est au joueur 1 de jouer !")
-        saisieCoords()
-        
-    elif joueur2:
+        saisieCoords(1)
+        print(grille)
+        joueur = 2
+    elif joueur == 2:
         print("C'est au joueur 2 de jouer !")
+        saisieCoords(2)
+        print(grille)
 
 os.system("pause")
